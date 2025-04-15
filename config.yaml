@@ -1,0 +1,30 @@
+# Training Configuration
+
+# --- Dataset ---
+# Path to the specific dataset configuration file (e.g., data.yaml)
+# This path should be accessible from where you run the train.py script
+dataset_yaml_path: "/path/to/your/dataset/on/ec2/data.yaml" # *** MODIFY THIS ***
+
+# --- Model ---
+# Base model to start training from (e.g., yolov8n.pt, yolov8s.pt)
+# Can also be a path to a previously trained model (.pt file)
+base_model: "yolov8n.pt"
+
+# --- Training Parameters ---
+epochs: 100
+img_size: 640
+batch_size: 16 # Adjust based on EC2 instance GPU memory
+optimizer: 'auto' # Or specify like Adam, SGD
+learning_rate: 0.01 # Example, often handled by 'auto'
+patience: 20 # Early stopping patience
+device: '0' # GPU device ID (e.g., '0' for the first GPU, 'cpu' for CPU)
+
+# --- Output ---
+# Directory where training results (models, logs, plots) will be saved
+output_dir: "/path/to/save/results/on/ec2" # *** MODIFY THIS ***
+# Specific name for this training run (will create a subfolder in output_dir)
+run_name: "ec2_training_run_01"
+
+# --- Optional ---
+# Add any other valid YOLO training arguments here if needed
+# e.g., workers: 8

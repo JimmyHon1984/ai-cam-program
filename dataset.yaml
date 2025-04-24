@@ -1,0 +1,14 @@
+path: ai-cam-program/yolo_datasets/dataset
+train: images/train
+val: images/val
+names:
+  0: bicycle
+  1: bus
+  2: dolphin
+  3: elephant
+  4: forest
+  5: keyboard
+  6: mountain
+  7: rocket
+  8: tiger
+  9: train

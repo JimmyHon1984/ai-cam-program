@@ -3,7 +3,7 @@
 # --- Dataset ---
 # Path to the specific dataset configuration file (e.g., data.yaml)
 # This path should be accessible from where you run the train.py script
-dataset_yaml_path: "/content/ai-cam-program/dataset.yaml" # *** MODIFY THIS ***
+dataset_yaml_path: "/ai-cam-program/dataset.yaml" # *** MODIFY THIS ***
 
 # --- Model ---
 # Base model to start training from (e.g., yolov8n.pt, yolov8s.pt)
@@ -21,7 +21,7 @@ device: '0' # GPU device ID (e.g., '0' for the first GPU, 'cpu' for CPU)
 
 # --- Output ---
 # Directory where training results (models, logs, plots) will be saved
-output_dir: "/content/ai-cam-program/yolo_datasets/results" # *** MODIFY THIS ***
+output_dir: "/ai-cam-program/yolo_datasets/results" # *** MODIFY THIS ***
 # Specific name for this training run (will create a subfolder in output_dir)
 run_name: "ec2_training_run_01"
 

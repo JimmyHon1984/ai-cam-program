@@ -14,11 +14,12 @@ This project provides a Python script (`train.py`) to run Ultralytics YOLOv8 mod
 
 ## File Structure
 
+```bash
 ├── train.py             # Main training and monitoring script
 ├── config.yaml          # Training configuration file (user needs to modify)
 ├── dataset.yaml         # YOLO dataset configuration file (user needs to modify or provide)
 └── (your_dataset_folder) # Place according to the path in dataset.yaml
-
+```
 
 ## Prerequisites
 

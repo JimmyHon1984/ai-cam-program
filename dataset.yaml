@@ -1,4 +1,4 @@
-path: ai-cam-program/yolo_datasets/dataset
+path: /content/ai-cam-program/yolo_datasets/yolo_datasets/dataset
 train: images/train
 val: images/val
 names:
